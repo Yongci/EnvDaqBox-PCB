@@ -1,0 +1,51 @@
+** Drc report for EnvDaqBox.kicad_pcb **
+** Created on 2026-05-07T20:19:12 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 7 DRC violations **
+[shorting_items]: 短路了两个不同网络的项目 (网络  和 Net-(U4-VIN))
+    Local override; error (excluded)
+    @(152.5500 mm, 130.7300 mm): Polygon [<no net>] of U4 on F.Cu
+    @(165.5000 mm, 130.9153 mm): Polygon [Net-(U4-VIN)] on F.Cu
+    大电流引脚微调
+[shorting_items]: 短路了两个不同网络的项目 (网络 Net-(U4-VIN) 和 )
+    Local override; error (excluded)
+    @(151.6500 mm, 130.9200 mm): Pad 8 [Net-(U4-VIN)] of U4 on F.Cu
+    @(152.5500 mm, 130.7300 mm): Polygon [<no net>] of U4 on F.Cu
+    异形大电流供电引脚大面积铺铜和散热
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: <电路板配置> 中的 "丝印" 约束; warning (excluded)
+    @(84.5000 mm, 65.7500 mm): Rectangle on Edge.Cuts
+    @(168.6800 mm, 136.7745 mm): Segment of P1 on F.Silkscreen
+    外壳要开孔，端口需要平行或略微高于边线
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: <电路板配置> 中的 "丝印" 约束; warning (excluded)
+    @(84.5000 mm, 65.7500 mm): Rectangle on Edge.Cuts
+    @(168.6800 mm, 136.7745 mm): Segment of P1 on F.Silkscreen
+    外壳要开孔，端口需要平行或略微高于边线
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: <电路板配置> 中的 "丝印" 约束; warning (excluded)
+    @(84.5000 mm, 65.7500 mm): Rectangle on Edge.Cuts
+    @(177.3200 mm, 136.7745 mm): Segment of P1 on F.Silkscreen
+    外壳要开孔，端口需要平行或略微高于边线
+[lib_footprint_mismatch]: 封装 'TYPE-C-Receptacle-2.0' 与库 'WCH' 中的副本不匹配
+    Local override; warning (excluded)
+    @(173.0000 mm, 129.0245 mm): Footprint P1
+    部分边缘引脚略微调整，未使用引脚减少了尺寸
+[lib_footprint_mismatch]: 封装 'RPA0010A-MFG' 与库 'Yongci' 中的副本不匹配
+    Local override; warning (excluded)
+    @(150.8500 mm, 129.9300 mm): Footprint U4
+    官方推荐样式
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **
